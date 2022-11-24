@@ -60,61 +60,67 @@ function calcular() {
 
 function mudaEstado(letra) {
     if (letra == 'p') {
-        var p = !p;
         if (document.getElementById(letra).innerHTML == 'V') {
+            var p = false
             document.getElementById(letra).innerHTML = 'F';
             document.getElementById(letra).setAttribute("class", "botaof");
         } else {
+            var p = true
             document.getElementById(letra).innerHTML = 'V';
             document.getElementById(letra).setAttribute("class", "botaot");
         }
     }
     if (letra == 'q') {
-        var q = !q;
         if (document.getElementById(letra).innerHTML == 'V') {
+            var q = false
             document.getElementById(letra).innerHTML = 'F';
             document.getElementById(letra).setAttribute("class", "botaof");
         } else {
+            var q = true
             document.getElementById(letra).innerHTML = 'V';
             document.getElementById(letra).setAttribute("class", "botaot");
         }
     }
     if (letra == 'r') {
-        var r = !r;
         if (document.getElementById(letra).innerHTML == 'V') {
+            var r = false
             document.getElementById(letra).innerHTML = 'F';
             document.getElementById(letra).setAttribute("class", "botaof");
         } else {
+            var r = true
             document.getElementById(letra).innerHTML = 'V';
             document.getElementById(letra).setAttribute("class", "botaot");
         }
     }
     if (letra == 's') {
-        var s = !s;
         if (document.getElementById(letra).innerHTML == 'V') {
+            var s = false
             document.getElementById(letra).innerHTML = 'F';
             document.getElementById(letra).setAttribute("class", "botaof");
         } else {
+            var s = true
             document.getElementById(letra).innerHTML = 'V';
             document.getElementById(letra).setAttribute("class", "botaot");
         }
     }
     if (letra == 't') {
-        var t = !t;
         if (document.getElementById(letra).innerHTML == 'V') {
+            var t = false
             document.getElementById(letra).innerHTML = 'F';
             document.getElementById(letra).setAttribute("class", "botaof");
         } else {
+            var t = true
             document.getElementById(letra).innerHTML = 'V';
             document.getElementById(letra).setAttribute("class", "botaot");
         }
     }
     if (letra == 'u') {
-        var u = !u;
         if (document.getElementById(letra).innerHTML == 'V') {
+            var u = false
             document.getElementById(letra).innerHTML = 'F';
             document.getElementById(letra).setAttribute("class", "botaof");
         } else {
+            var u = true
             document.getElementById(letra).innerHTML = 'V';
             document.getElementById(letra).setAttribute("class", "botaot");
         }
