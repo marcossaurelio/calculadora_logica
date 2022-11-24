@@ -1,0 +1,113 @@
+.bg {
+    background-image: linear-gradient(45deg, rgb(9, 10, 61), rgb(29, 16, 61));
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.calc {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transform: translate(-50%,-50%);
+}
+
+.monitor {
+    width: 390px;
+    height: 85px;
+    background-color:  rgb(226, 233, 240);;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Helvetica';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 85px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.resultado {
+    width: 100%;
+    height: 8%;
+    background-color: rgb(226, 233, 240);
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Helvetica';
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 47px;
+    margin-top: 20px;
+}
+
+.botao3 {
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+.botao2 {
+    width: 185px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+.botaoletra {
+    width: 88px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+
+.botao3:hover, .botao2:hover, .botaoletra:hover{
+    background-color: black;
+}
+
+.botaot {
+    width: 35px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(23, 102, 3);
+    border: none;
+    color: white;
+    margin-left: -10px;
+}
+
+.botaot:hover {
+    background-color: rgb(8, 87, 0);
+}
+
+.botaof {
+    width: 35px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(129, 0, 0);
+    border: none;
+    color: white;
+    margin-left: -10px;
+}
+
+.botaof:hover {
+    background-color: rgb(114, 0, 0);
+}

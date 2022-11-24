@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Lógica</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+</head>
+
+<body class="bg">
+    <div class="calc">  
+        <p class="monitor" id="monitor">
+        </p>
+        <table>
+            <tr>
+                <td><button class="botao3" onclick="clean()">c</button></td>
+                <td><button class="botao3" onclick="back()">bs</button></td>
+                <td><button class="botao3" onclick="calcular()">=</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><button class="botao2" onclick="insert('&#40;')">(</button></td>
+                <td><button class="botao2" onclick="insert('&#41;')">)</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><button class="botao3" onclick="insert('∧')">∧</button></td>
+                <td><button class="botao3" onclick="insert('∨')">∨</button></td>
+                <td><button class="botao3" onclick="insert('∼')">∼</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><button class="botao2" onclick="insert('→')">→</button></td>
+                <td><button class="botao2" onclick="insert('↔')">↔</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><button class="botaoletra" onclick="insert('P')">P</button></td>
+                <td><button class="botaot" id="p" onclick="mudaEstado('p')">V</button></td>
+                <td><button class="botaoletra" onclick="insert('Q')">Q</button></td>
+                <td><button class="botaot" id="q" onclick="mudaEstado('q')">V</button></td>
+                <td><button class="botaoletra" onclick="insert('R')">R</button></td>
+                <td><button class="botaot" id="r" onclick="mudaEstado('r')">V</button></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><button class="botaoletra" onclick="insert('S')">S</button></td>
+                <td><button class="botaot" id="s" onclick="mudaEstado('s')">V</button></td>
+                <td><button class="botaoletra" onclick="insert('T')">T</button></td>
+                <td><button class="botaot" id="t" onclick="mudaEstado('t')">V</button></td>
+                <td><button class="botaoletra" onclick="insert('U')">U</button></td>
+                <td><button class="botaot" id="u" onclick="mudaEstado('u')">V</button></td>
+            </tr>
+        </table>
+        <p class="resultado" id="resultado">
+        </p>
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>
