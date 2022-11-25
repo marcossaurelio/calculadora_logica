@@ -76,10 +76,16 @@ function back() {
 function calcular() {
     if (expressao === '') {
         clean();
-    } else if (eval(expressao) == undefined) {
-        document.getElementById('resultado').innerHTML = 'operação inválida';
     } else {
-        document.getElementById('resultado').innerHTML = eval(expressao);
+        try {
+            if (eval(expressao) === true) {
+                document.getElementById('resultado').innerHTML = 'Verdadeiro';
+            } else if (eval(expressao) === false) {
+                document.getElementById('resultado').innerHTML = 'Falso';
+            }
+        } catch(erro) {
+            document.getElementById('resultado').innerHTML = 'operação inválida';
+        }
     }
 }
 
