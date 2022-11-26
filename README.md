@@ -1,1 +1,1 @@
-# Link do protótipo: https://marcossaurelio.github.io/calculadora_logica/
+# Link da aplicação: https://marcossaurelio.github.io/calculadora_logica/
