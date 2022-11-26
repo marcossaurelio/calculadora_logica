@@ -142,4 +142,7 @@ function mudaEstado(letra) {
         }
     }
     calcular();
+    if (document.getElementById('resultado').innerHTML == 'operação inválida') {
+        document.getElementById('resultado').innerHTML = '';
+    }
 }
