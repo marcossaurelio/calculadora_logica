@@ -15,43 +15,34 @@ function insert(char) {
     document.getElementById('monitor').innerHTML = conteudo + char;
     if(char=='\('){
         expressao += '(';
-        cleanResult();
     } else if(char=='\)'){
         expressao += ')';
-        cleanResult();
     } else if(char=='∧'){
         expressao += '&&';
-        cleanResult();
     } else if(char=='∨'){
         expressao += '||'
-        cleanResult();
     } else if(char=='~'){
         expressao += '!';
-        cleanResult();
     } else if(char=='→'){
         expressao += '==';
-        cleanResult();
     } else if(char=='↔'){
         expressao += '==';
-        cleanResult();
     } else if(char=='P'){
         expressao += 'p';
-        calcular();
     } else if(char=='Q'){
         expressao += 'q';
-        calcular();
     } else if(char=='R'){
         expressao += 'r';
-        calcular();
     } else if(char=='S'){
         expressao += 's';
-        calcular();
     } else if(char=='T'){
         expressao += 't';
-        calcular();
     } else if(char=='U'){
         expressao += 'u';
-        calcular();
+    }
+    calcular();
+    if (document.getElementById('resultado').innerHTML == 'operação inválida') {
+        document.getElementById('resultado').innerHTML = '';
     }
 }
 
