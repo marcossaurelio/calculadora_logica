@@ -1,15 +1,14 @@
+// Variáveis atribuídas de cada proposição.
 let p = true;
 let q = true;
 let r = true;
 let s = true;
 let t = true;
 let u = true;
-let expressao = '';
 
-function cleanResult() {
-    document.getElementById('resultado').innerHTML = '';
-}
+let expressao = ''; // Variável que armazena em string a expressão lógica a ser calculada.
 
+// Função chamada ao inserir um caratere na expressão.
 function insert(char) {
     let conteudo = document.getElementById('monitor').innerHTML;
     document.getElementById('monitor').innerHTML = conteudo + char;
@@ -40,18 +39,25 @@ function insert(char) {
     } else if(char=='U'){
         expressao += 'u';
     }
-    calcular();
+    calcular(); // Sempre que inserir um novo caractere, o programa irá calcular o valor da expressão.
     if (document.getElementById('resultado').innerHTML == 'operação inválida') {
         document.getElementById('resultado').innerHTML = '';
     }
 }
 
+// Limpa a tela de resultado.
+function cleanResult() {
+    document.getElementById('resultado').innerHTML = '';
+}
+
+// Limpa a expressão e o resultado.
 function clean() {
     document.getElementById('monitor').innerHTML = '';
     expressao = '';
     cleanResult();
 }
 
+// Backspace.
 function back() {
     conteudo = document.getElementById('monitor').innerHTML;
     document.getElementById('monitor').innerHTML = conteudo.substring(0, conteudo.length -1);
@@ -61,9 +67,11 @@ function back() {
     } else {
         expressao = exp.substring(0, exp.length -1);
     }
-    cleanResult();
+    cleanResult(); // Limpa a tela de resultado ao dar backspace.
 }
 
+// Calcula a expressão por meio do método eval.
+// Caso dê erro, o programa informa ao usuário a mensagem de "operação inválida".
 function calcular() {
     if (expressao === '') {
         clean();
@@ -80,6 +88,7 @@ function calcular() {
     }
 }
 
+// Função que muda o estado de TRUE para FALSE e vice-versa para cada proposição.
 function mudaEstado(letra) {
     if (letra == 'p') {
         p = !p
@@ -141,7 +150,7 @@ function mudaEstado(letra) {
             document.getElementById(letra).setAttribute("class", "botaot");
         }
     }
-    calcular();
+    calcular(); // Sempre que mudar o estado, será calculada a expressão.
     if (document.getElementById('resultado').innerHTML == 'operação inválida') {
         document.getElementById('resultado').innerHTML = '';
     }   
