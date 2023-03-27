@@ -12,32 +12,46 @@ let expressao = ''; // Variável que armazena em string a expressão lógica a s
 function insert(char) {
     let conteudo = document.getElementById('monitor').innerHTML;
     document.getElementById('monitor').innerHTML = conteudo + char;
-    if(char=='\('){
+    switch (char) {
+    case '\(':
         expressao += '(';
-    } else if(char=='\)'){
+        break;
+    case '\)':
         expressao += ')';
-    } else if(char=='∧'){
+        break;
+    case '∧':
         expressao += '&&';
-    } else if(char=='∨'){
-        expressao += '||'
-    } else if(char=='~'){
-        expressao += '!';
-    } else if(char=='→'){
+        break;
+    case '∨':
+        expressao += ''||'';
+        break;
+    case '~':
+        expressao +=  '!';
+        break;
+    case '→':
         expressao += '==';
-    } else if(char=='↔'){
+        break;
+    case '↔':
         expressao += '==';
-    } else if(char=='P'){
+        break;
+    case 'P':
         expressao += 'p';
-    } else if(char=='Q'){
+        break;
+    case 'Q':
         expressao += 'q';
-    } else if(char=='R'){
+        break;
+    case 'R':
         expressao += 'r';
-    } else if(char=='S'){
+        break;
+    case 'S':
         expressao += 's';
-    } else if(char=='T'){
+        break;
+    case 'T':
         expressao += 't';
-    } else if(char=='U'){
+        break;
+    case 'U':
         expressao += 'u';
+        break;
     }
     calcular(); // Sempre que inserir um novo caractere, o programa irá calcular o valor da expressão.
     if (document.getElementById('resultado').innerHTML == 'operação inválida') {
