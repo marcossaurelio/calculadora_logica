@@ -1,1 +1,1 @@
-[Utilize a aplicação](https://marcossaurelio.github.io/calculadora_logica/)
+[Clique aqui](https://marcossaurelio.github.io/calculadora_logica/) para testar a aplicação do projeto.
